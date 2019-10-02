@@ -97,7 +97,7 @@ class _Settings:
         mouse_scroll_step=DEFAULT_MOUSE_SCROLL_STEP,
         key_shortcut_delay=DEFAULT_KEY_SHORTCUT_DELAY,
         site_load_timeout=DEFAULT_SITE_LOAD_TIMEOUT,
-        package_root=PACKAGE_ROOT,
+        package_root=PACKAGE_ROOT
     ):
 
         self.wait_scan_rate = wait_scan_rate
@@ -124,6 +124,7 @@ class _Settings:
         self.virtual_keyboard = False
         self.debug_image = False
         self.debug_image_path = _create_tempdir()
+        self.package_root = package_root
         self._code_root = get_active_root()
         sys.path.append(self._code_root)
 
